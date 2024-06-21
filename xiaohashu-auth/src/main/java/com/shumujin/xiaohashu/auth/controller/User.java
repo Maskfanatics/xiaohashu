@@ -1,5 +1,6 @@
 package com.shumujin.xiaohashu.auth.controller;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +19,14 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class User {
+    /**
+     * 昵称
+     */
+    @NotBlank(message = "昵称不能为空")
     private String nickName;
 
+    /**
+     * 创建时间
+     */
     private LocalDateTime createTime;
 }

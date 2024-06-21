@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 /**
  * @author: riversome1
  * @date: 2024/6/20 18:25
- * @description:
+ * @description: 请求日志 AOP
  **/
 
 @Aspect
